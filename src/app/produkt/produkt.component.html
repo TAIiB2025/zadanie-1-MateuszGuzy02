@@ -1,0 +1,9 @@
+<div [ngStyle]="{ 'border': '1px solid black', 'padding': '10px', 'margin': '10px', 'background-color': produkt.czyPromocja ? 'red' : 'white' }">
+
+    Nazwa: <strong>{{produkt.nazwa}}</strong>
+    Cena: <strong>{{produkt.cena | currency: 'PLN ':'symbol' }}</strong>
+    Data Utworzenia: <strong>{{produkt.dataUtworzenia | date: 'dd.MM.yyyy'}}</strong>
+    Liczba sztuk w koszyku: <strong>{{produkt.liczbaSztuk}}</strong>
+    <button (click)="onDodajDoKoszyka()" style="margin-left: 20px;">Dodaj do koszyka</button>
+
+</div>
